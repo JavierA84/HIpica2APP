@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_nombre_jinete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Jinete" />
+
+        <EditText
+            android:id="@+id/edit_text_movil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Móvil" />
+
+        <EditText
+            android:id="@+id/edit_text_nombre_caballo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Caballo" />
+
+        <Button
+            android:id="@+id/button_select_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Fecha" />
+
+        <Button
+            android:id="@+id/button_select_hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Hora" />
+
+        <EditText
+            android:id="@+id/edit_text_comentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comentario" />
+
+        <Button
+            android:id="@+id/button_save_reserva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Reserva" />
+
+    </LinearLayout>
+</ScrollView>

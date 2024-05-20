@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/reservaListFragment">
+
+    <fragment
+        android:id="@+id/reservaListFragment"
+        android:name="com.example.hipicaapp.ui.ReservaListFragment"
+        android:label="Reserva List"
+        tools:layout="@layout/fragment_reserva_list" >
+        <action
+            android:id="@+id/action_reservaListFragment_to_addEditReservaFragment"
+            app:destination="@id/addEditReservaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditReservaFragment"
+        android:name="com.example.hipicaapp.ui.AddEditReservaFragment"
+        android:label="Add/Edit Reserva"
+        tools:layout="@layout/fragment_add_edit_reserva" >
+        <argument
+            android:name="reservaId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+</navigation>
